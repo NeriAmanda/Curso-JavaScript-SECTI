@@ -6,7 +6,7 @@ let valorTexto = prompt("Digite o valor da compra: ");
 let valorCompra = Number(valorTexto.replace(",", "."));
 
 let desconto;
-let percentualDesconto;
+let percentualDesconto; // A variável percentualDesconto foi criada para exibir claramente ao usuário o percentual de desconto que ele recebeu.
 
 if (valorCompra > 100) {
   percentualDesconto = 10;
@@ -18,7 +18,7 @@ if (valorCompra > 100) {
 
 let valorFinal = valorCompra - desconto;
 
-console.log("Valor original: R$ " + valorCompra.toFixed(2));
+console.log("Valor original: R$ " + valorCompra.toFixed(2)); // O .toFixed(2) garante que o número seja exibido com duas casas decimais.
 console.log("Desconto aplicado: R$ " + desconto.toFixed(2));
 console.log("Valor final com desconto: R$ " + valorFinal.toFixed(2));
 console.log("Você recebeu um desconto de " + percentualDesconto + "%.");
