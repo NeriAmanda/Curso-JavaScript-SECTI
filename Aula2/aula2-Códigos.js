@@ -25,5 +25,15 @@ let n1 = 5, n2 = 2
 let resultado = n1 * n2
 console.log("Resultado: ", resultado)
 
+let valor;
+console.log("Valor: " + typeof(valor));
+
+let semValor = null;
+console.log("semValor: " + typeof(semValor));
+console.log(semValor === null);
+
+let numeroGrande = 9438248938249333n;
+console.log("Número: " + typeof(numeroGrande));
+
 
 
